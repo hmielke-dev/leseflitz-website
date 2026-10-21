@@ -3,36 +3,163 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leseflitz – flüssiger lesen lernen</title>
-<meta name="description" content="Leseflitz ist ein kleiner Lesetrainer für Kinder in Klasse 1 bis 3: Wörter erscheinen, das Kind liest laut, ein Erwachsener tippt weiter.">
+<title>Leseflitz – Lese-App für Kinder: flüssig lesen üben</title>
+<meta name="description" content="Leseflitz hilft Kindern von der Vorschule bis zur 4. Klasse, Wörter auf einen Blick zu erkennen: häufigste Wörter, b und d, Wortklinik, Wörter aus dem eigenen Buch. Ohne Abo, ohne Werbung.">
+<link rel="canonical" href="https://leseflitz.de/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://leseflitz.de/">
+<meta property="og:title" content="Leseflitz – flüssiger lesen mit fünf Minuten am Tag">
+<meta property="og:description" content="Lese-App für Kinder von der Vorschule bis zur 4. Klasse. 7 Tage alles testen, ohne Abo, ohne Werbung.">
+<meta property="og:image" content="https://leseflitz.de/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Zum Store-Start: Safari zeigt auf dem iPhone dann einen Download-Balken (APP-ID eintragen und Zeile aktivieren)
+<meta name="apple-itunes-app" content="app-id=APP-ID">
+-->
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Leseflitz",
+  "operatingSystem": "iOS, Android",
+  "applicationCategory": "EducationalApplication",
+  "inLanguage": "de",
+  "description": "Lesetrainer für Kinder von der Vorschule bis zur 4. Klasse: Wörter erscheinen, das Kind liest laut, ein Erwachsener tippt weiter.",
+  "url": "https://leseflitz.de/",
+  "publisher": { "@type": "Organization", "name": "LINICA GmbH", "url": "https://leseflitz.de/" }
+}
+</script>
 </head>
 <body>
 <div class="wrap">
   <header class="top">
-    <a href="./"><img src="img/logo.png" alt="Leseflitz" width="712" height="223"></a>
-    <nav><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+    <a href="./" class="logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo-400.png" alt="Leseflitz" width="400" height="125"></picture></a>
+    <nav aria-label="Seite"><a href="#so">So geht’s</a><a href="#preis">Preis</a><a href="#hilfe">Fragen</a></nav>
   </header>
 
   <section class="hero">
     <img class="kid" src="img/kind.jpg" alt="" width="240" height="240">
-    <p>Ein kleiner Lesetrainer für Kinder, die die Buchstaben schon kennen und jetzt flüssiger lesen möchten.</p>
+    <h1>Flüssiger lesen – mit fünf Minuten am Tag</h1>
+    <p class="lead">Ein Wort erscheint, dein Kind liest es laut vor, du tippst weiter. So erkennt es die Wörter, die in fast
+      jedem Kinderbuch stehen, bald auf einen Blick – und hat mehr Kopf für die Geschichte.
+      Für Kinder von der Vorschule bis zur 4. Klasse.</p>
+    <div class="stores" data-place="hero" hidden>
+      <a data-os="ios" href="#laden"><img src="img/badge-appstore-de.svg" alt="Laden im App Store" width="120" height="40"></a>
+      <a data-os="android" href="#laden"><img src="img/badge-googleplay-de.png" alt="Jetzt bei Google Play" width="155" height="60"></a>
+    </div>
     <span class="soon">Bald im App Store und bei Google Play</span>
+    <p class="priceline">Kostenlos laden · 7 Tage alles testen · danach gratis weiter mit einem Kind – oder Leseflitz
+      komplett<span class="mitpreis" hidden> für <span class="preis"></span></span>, einmal bezahlt · kein Abo, keine Werbung</p>
   </section>
 
-  <h2>So geht’s</h2>
+  <div class="shots" role="list" aria-label="Bilder aus der App">
+    <figure role="listitem"><img src="img/app-wort.webp" alt="Das Wort „nicht“ groß auf dem Bildschirm, darunter der Knopf „Wortklinik“" width="390" height="844" loading="lazy">
+      <figcaption>Ein Wort. Laut lesen. Weitertippen.</figcaption></figure>
+    <figure role="listitem"><img src="img/app-auswahl.webp" alt="Wortauswahl: häufigste Wörter, b und d, Stolperwörter, Wortgruppen, Wortklinik, das eigene Buch" width="390" height="844" loading="lazy">
+      <figcaption>Die Wörter aus fast jedem Kinderbuch</figcaption></figure>
+    <figure role="listitem"><img src="img/app-ergebnis.webp" alt="Ergebnis: Zeit für 10 Wörter und die eigene Bestzeit" width="390" height="844" loading="lazy">
+      <figcaption>Die eigene Bestzeit schlagen</figcaption></figure>
+  </div>
+
+  <h2 id="so">So geht’s</h2>
   <ol class="steps">
-    <li><img src="img/i-haeufig.png" alt=""><div><b>Wörter aussuchen</b>Die häufigsten Wörter aus Kinderbüchern, b und d,
-      Stolperwörter – oder Wörter aus dem Buch, das ihr gerade lest.</div></li>
-    <li><img src="img/i-stoppuhr.png" alt=""><div><b>Laut lesen, weitertippen</b>Ein Wort erscheint, das Kind liest es vor,
-      ein Erwachsener tippt weiter. Am Ende steht die Zeit und die eigene Bestzeit.</div></li>
-    <li><img src="img/i-wortklinik.png" alt=""><div><b>Wortklinik</b>Wörter, die haken, kommen in die Wortklinik und werden
-      geübt, bis sie viermal hintereinander gut gelesen sind.</div></li>
-    <li><img src="img/i-buch.png" alt=""><div><b>Für die ganze Familie</b>Ein Kauf, alles drin, auf allen Handys und Tablets
-      der Familie – ohne Abo, ohne Werbung.</div></li>
+    <li><img src="img/i-haeufig.png" alt="" width="56" height="56"><div><b>Wörter aussuchen</b>Die häufigsten Wörter aus
+      Kinderbüchern, b und d, Stolperwörter, Wortgruppen – oder Wörter aus dem Buch, das ihr gerade lest.</div></li>
+    <li><img src="img/i-stoppuhr.png" alt="" width="56" height="56"><div><b>Laut lesen, weitertippen</b>Ein Wort erscheint,
+      das Kind liest es vor, ein Erwachsener tippt weiter. Am Ende steht die Zeit und die eigene Bestzeit.
+      Im Modus „Blitz“ laufen die Wörter von allein.</div></li>
+    <li><img src="img/i-wortklinik.png" alt="" width="56" height="56"><div><b>Wortklinik</b>Wörter, die haken, kommen in
+      die Wortklinik und werden geübt, bis sie viermal hintereinander gut gelesen sind.</div></li>
+    <li><img src="img/i-buch.png" alt="" width="56" height="56"><div><b>Euer eigenes Buch</b>Text einfügen, Leseflitz sucht
+      je Kapitel die schwierigen Wörter heraus. Vor dem Kapitel kurz üben, dann liest sich die Geschichte flüssiger.</div></li>
   </ol>
+
+  <h2>Warum das hilft</h2>
+  <p>Solange ein Kind jedes Wort Buchstabe für Buchstabe zusammensetzt, bleibt für die Geschichte kaum Kopf frei.
+    Dabei besteht ein Kinderbuch zu einem großen Teil aus denselben paar hundert Wörtern: <i>und</i>, <i>die</i>,
+    <i>nicht</i>, <i>war</i>, <i>sagte</i>. Wer sie auf einen Blick erkennt, liest leichter, schneller und mit mehr Freude.</p>
+  <p><b>b</b> und <b>d</b> sind derselbe Bogen mit Strich, nur gespiegelt. Viele Kinder vertauschen die beiden noch eine
+    ganze Weile – das ist ganz normal. Darum gibt es eine eigene Übung, mit einzelnen Wörtern und in kurzen Sätzen, und
+    eine Eselsbrücke: Beide Daumen hoch!</p>
+  <img class="bdimg" src="img/bd-eselsbruecke.webp" alt="a, b, c, d – das b und das d sind zwei Hände mit Daumen hoch" width="700" height="263" loading="lazy">
+  <p class="note">Tipp: Lieber jeden Tag fünf Minuten als einmal in der Woche eine halbe Stunde.</p>
+
+  <h2>Für Eltern</h2>
+  <div class="split">
+    <ul class="ticks">
+      <li><b>Seht, wie es vorangeht:</b> Übungskalender, Fortschritt je Wortliste und die Wörter, die noch haken.</li>
+      <li><b>Bis zu 8 Kinder,</b> jedes mit eigenen Bestzeiten und eigener Wortklinik.</li>
+      <li><b>Alle Geräte der Familie</b> sind auf demselben Stand – das zweite Elternteil kommt per Einladungscode dazu.</li>
+      <li><b>Auf Wunsch eine Erinnerung</b> zur Übungszeit, ohne dass dafür etwas das Handy verlässt.</li>
+      <li><b>Bestzeiten sind ein Spiel mit sich selbst.</b> Mit anderen Kindern wird nichts verglichen.</li>
+    </ul>
+    <figure class="shot1"><img src="img/app-auswertung.webp" alt="Auswertung für Eltern: Übungstage, Runden, Übungskalender der letzten 12 Wochen" width="390" height="844" loading="lazy">
+      <figcaption>Auswertung je Kind</figcaption></figure>
+  </div>
+
+  <h2>Gemacht für Kinder – und für ihre Eltern</h2>
+  <ul class="ticks">
+    <li><b>Keine Werbung, kein Tracking,</b> keine Analyse-Dienste.</li>
+    <li><b>Im Kinderbereich keine Kaufhinweise.</b> Kauf, Einstellungen und Links nach außen liegen hinter einer Elternsperre
+      mit Rechenaufgabe.</li>
+    <li><b>Von Kindern nur Vorname oder Spitzname</b> und ein Bild aus der App, auf Wunsch Klasse und Übungsziel.
+      Kein Geburtsdatum, keine Fotos.</li>
+    <li><b>Eingefügte Buchtexte bleiben auf dem Gerät,</b> gespeichert werden nur die Wortlisten.</li>
+    <li><b>Daten auf Servern in Frankfurt am Main.</b> Konto und alle Daten lassen sich jederzeit in der App löschen.</li>
+  </ul>
+
+  <h2 id="preis">Was kostet Leseflitz?</h2>
+  <div class="prices">
+    <div class="price"><h3>Testphase</h3><p class="big">7 Tage</p><p>Alles freigeschaltet, für alle Kinder der Familie.</p></div>
+    <div class="price"><h3>Gratis</h3><p class="big">dauerhaft</p><p>Ein Kind übt mit den 100 häufigsten Wörtern und der
+      Wortklinik. Auswertung und Abgleich zwischen den Geräten sind dabei.</p></div>
+    <div class="price best"><h3>Leseflitz komplett</h3><p class="big"><span class="preis">einmalig</span></p><p>Einmal
+      bezahlt: alle Wortlisten, eigene Bücher, Spiele, bis zu 8 Kinder – für die ganze Familie, ohne Abo.</p></div>
+  </div>
+  <p class="note">Die Übungsdaten bleiben auch nach der Testphase erhalten und sind nach dem Kauf sofort wieder da.</p>
+
+  <h2 id="hilfe">Häufige Fragen</h2>
+  <div class="faq">
+    <details><summary>Ab welchem Alter?</summary>
+      <p>Für Kinder, die die Buchstaben kennen und flüssiger lesen möchten – von der Vorschule bis zur 4. Klasse.
+        Für den Anfang gibt es eine Schrift nur mit Großbuchstaben und mehr Abstand zwischen den Buchstaben.</p></details>
+    <details><summary>Was kostet Leseflitz?</summary>
+      <p>Kostenlos laden und 7 Tage alles testen. Danach übt ein Kind dauerhaft gratis mit den 100 häufigsten Wörtern und
+        der Wortklinik – oder ihr schaltet Leseflitz komplett frei, einmal bezahlt<span class="mitpreis" hidden>
+        (<span class="preis"></span>)</span>, ohne Abo.</p></details>
+    <details><summary>Gibt es ein Abo oder weitere Käufe?</summary>
+      <p>Nein. Es gibt genau einen Kauf, und der geht nur im Elternbereich der App.</p></details>
+    <details><summary>Kann mein Kind allein üben?</summary>
+      <p>Die Leseübung ist für zwei gedacht: Das Kind liest, ein Erwachsener sitzt daneben und tippt. Im Modus „Blitz“
+        laufen die Wörter von allein, und die Spiele „Wort-Paare“ und „Bild und Wort“ gehen ganz allein.</p></details>
+    <details><summary>Können wir Wörter aus unserem Buch üben?</summary>
+      <p>Ja. Den Text einfügen, Leseflitz sucht je Kapitel die schwierigen Wörter heraus – bis zu zwei Bücher.
+        Der Text selbst bleibt auf dem Gerät.</p></details>
+    <details><summary>Was ist die Wortklinik?</summary>
+      <p>Wörter, bei denen es hakt, kommen in die Wortklinik – wenn ihr sie als falsch gelesen markiert oder wenn sie
+        zweimal viel länger gedauert haben als der Rest der Runde. Viermal hintereinander gut gelesen, und sie sind
+        wieder gesund.</p></details>
+    <details><summary>Geht es ohne Internet?</summary>
+      <p>Ja, üben geht auch offline. Die Runden werden übertragen, sobald wieder Internet da ist.</p></details>
+    <details><summary>Auf welchen Geräten?</summary>
+      <p>iPhone, iPad, Android-Handy und -Tablet. Alle Geräte einer Familie zeigen dieselben Kinder, Bestzeiten und Bücher.</p></details>
+    <details><summary>Wie löschen wir unsere Daten?</summary>
+      <p>In der App unter „Für Eltern“ → „Konto löschen“, oder per E-Mail. Alles dazu:
+        <a href="konto-loeschen.html">Konto und Daten löschen</a>.</p></details>
+  </div>
+
+  <h2 id="laden">Leseflitz laden</h2>
+  <div class="stores" data-place="footer" hidden>
+    <a data-os="ios" href="#laden"><img src="img/badge-appstore-de.svg" alt="Laden im App Store" width="120" height="40"></a>
+    <a data-os="android" href="#laden"><img src="img/badge-googleplay-de.png" alt="Jetzt bei Google Play" width="155" height="60"></a>
+  </div>
+  <p class="soon-text">Leseflitz kommt bald in den App Store und zu Google Play.</p>
+  <p class="desk note" hidden>Am besten auf dem Handy oder Tablet öffnen: <b>leseflitz.de</b></p>
 
   <h2>Kontakt</h2>
   <p>Fragen, Wünsche, Fehler gefunden? Schreib uns an <a href="mailto:kontakt@leseflitz.de">kontakt@leseflitz.de</a>.</p>
@@ -41,7 +168,36 @@
     <span>© 2026 LINICA GmbH</span>
     <a href="impressum.html">Impressum</a>
     <a href="datenschutz.html">Datenschutz</a>
+    <a href="konto-loeschen.html">Konto löschen</a>
   </footer>
 </div>
+<script>
+/* Zum Store-Start nur hier eintragen:
+   LIVE = true zeigt die Store-Knöpfe statt „Bald im App Store …“.
+   APPLE_ID = Zahl aus dem App-Store-Link (…/id1234567890), APPLE_PT = Anbieter-Kennung aus App Store Connect (optional).
+   PREIS = z. B. "6,99 €" – erscheint an allen Preis-Stellen (leer: ohne Betrag).
+   Die Links tragen eine Kampagnenkennung (hero/footer): die Stores zeigen so, wie viele Downloads über die Website
+   kamen. Die Website selbst misst nichts. */
+var LIVE = false, APPLE_ID = "", APPLE_PT = "", PREIS = "";
+(function(){
+  var GOOGLE = "https://play.google.com/store/apps/details?id=de.leseflitz.app&referrer=utm_source%3Dleseflitz.de%26utm_medium%3Dweb%26utm_campaign%3D";
+  function apple(place){ return "https://apps.apple.com/de/app/leseflitz/id"+APPLE_ID+"?mt=8&ct=web-"+place+(APPLE_PT ? "&pt="+APPLE_PT : ""); }
+  if(PREIS){
+    document.querySelectorAll(".preis").forEach(function(e){ e.textContent = PREIS; });
+    document.querySelectorAll(".mitpreis").forEach(function(e){ e.hidden = false; });
+  }
+  if(!LIVE || !APPLE_ID) return;
+  var u = navigator.userAgent, ios = /iPhone|iPad|iPod/.test(u) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1),
+      and = /Android/.test(u);
+  document.querySelectorAll(".stores").forEach(function(s){
+    var a = s.querySelector("[data-os=ios]"), g = s.querySelector("[data-os=android]"), place = s.dataset.place;
+    a.href = apple(place); g.href = GOOGLE + place;
+    if(and){ s.insertBefore(g, a); a.classList.add("dim"); } else if(ios) g.classList.add("dim");
+    s.hidden = false;
+  });
+  document.querySelectorAll(".soon, .soon-text").forEach(function(e){ e.hidden = true; });
+  if(!ios && !and) document.querySelector(".desk").hidden = false;
+})();
+</script>
 </body>
 </html>

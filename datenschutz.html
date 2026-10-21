@@ -11,15 +11,15 @@
 <body>
 <div class="wrap">
   <header class="top">
-    <a href="./"><img src="img/logo.png" alt="Leseflitz" width="712" height="223"></a>
-    <nav><a href="./">Start</a><a href="impressum.html">Impressum</a></nav>
+    <a href="./" class="logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo-400.png" alt="Leseflitz" width="400" height="125"></picture></a>
+    <nav aria-label="Seite"><a href="./">Start</a><a href="impressum.html">Impressum</a></nav>
   </header>
 
   <h1>Datenschutzerklärung</h1>
   <p class="note">Stand: Oktober 2026</p>
   <p>Leseflitz soll Kindern beim Lesen helfen und dabei so wenig Daten wie möglich verwenden. Hier steht, welche Daten
-    die App und diese Website verarbeiten, wozu und wer daran beteiligt ist. Es gibt keine Werbung, kein Tracking und
-    keine Weitergabe an Dritte zu Werbe- oder Analysezwecken.</p>
+    die App und diese Website verarbeiten, wozu, wie lange und wer daran beteiligt ist. Es gibt keine Werbung, kein
+    Tracking und keine Weitergabe an Dritte zu Werbe- oder Analysezwecken.</p>
 
   <h2>1. Verantwortlich</h2>
   <address>
@@ -42,64 +42,98 @@
     <li><b>Übungsrunden:</b> Datum und Uhrzeit, gewählte Wortliste, Anzahl der Wörter, Dauer, Lesezeit je Wort,
       ob ein Wort als „falsch gelesen“ markiert wurde, sowie ein grober Gerätehinweis (Touch oder Maus,
       Bildschirmgröße). Daraus ergeben sich Bestzeiten, die Wortklinik und die Auswertung für die Eltern.</li>
-    <li><b>Bücher:</b> nur die Wortlisten, die die App aus einem eingefügten Text erstellt, nicht der Text selbst.</li>
-    <li><b>Familie und Kauf:</b> welche Elternkonten zu einer Familie gehören, Beginn der Testphase und ob Leseflitz
-      gekauft wurde (mit der Kennung des Kaufs aus dem App Store bzw. Google Play, ohne Zahlungsdaten).</li>
+    <li><b>Bücher:</b> der vergebene Titel, die Kapitelnamen und die Wortlisten, die die App aus einem eingefügten Text
+      erstellt – nicht der Text selbst.</li>
+    <li><b>Familie und Kauf:</b> welche Elternkonten zu einer Familie gehören, Einladungscodes für ein zweites
+      Elternteil, Beginn der Testphase, welches Kind in der Gratis-Version übt und ob Leseflitz gekauft wurde (mit der
+      Kennung des Kaufs aus dem App Store bzw. Google Play, ohne Zahlungsdaten).</li>
+    <li><b>Technische Protokolle:</b> Bei der Anmeldung und bei jedem Zugriff auf die Datenbank verarbeitet unser
+      Anbieter Supabase die IP-Adresse, Zeitpunkt und eine Kennung von Browser bzw. App. Beim Versand des
+      Anmeldecodes speichert Brevo ein Versandprotokoll (Empfängeradresse, Zeitpunkt, Zustellstatus).</li>
   </ul>
+  <p>Pflicht sind nur die E-Mail-Adresse und der Vorname bzw. Spitzname eines Kindes; ohne sie lässt sich die App
+    nicht nutzen. Alles andere ist freiwillig oder entsteht beim Üben.</p>
 
   <h3>Wozu und auf welcher Grundlage</h3>
   <p>Wir verarbeiten diese Daten, um die App bereitzustellen: Anmeldung, Speichern der Übungsrunden, Abgleich zwischen
     den Geräten einer Familie, Bestzeiten, Wortklinik, Auswertung und Freischaltung nach dem Kauf
-    (Art. 6 Abs. 1 lit. b DSGVO, Vertrag mit den Eltern). Die Daten der Kinder geben die Eltern ein; die App ist für die
-    Nutzung durch Kinder gemeinsam mit einem Erwachsenen gedacht.</p>
+    (Art. 6 Abs. 1 lit. b DSGVO, Vertrag mit den Eltern).</p>
+  <p><b>Daten der Kinder:</b> Vertragspartner sind die Eltern. Sie legen die Kinder an und geben deren Angaben ein; die
+    App ist für die Nutzung durch Kinder gemeinsam mit einem Erwachsenen gedacht. Die Daten der Kinder verarbeiten wir
+    zur Erfüllung des Vertrags mit den Eltern, nicht auf Grundlage einer Einwilligung des Kindes
+    (Art. 8 DSGVO findet daher keine Anwendung).</p>
+  <p><b>Technische Protokolle</b> dienen der Sicherheit: Missbrauch erkennen, Angriffe abwehren, Fehler finden
+    (Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse an einem sicheren Betrieb).</p>
 
   <h3>Wer beteiligt ist</h3>
   <ul>
     <li><b>Supabase</b> (Supabase Inc., USA) betreibt für uns die Datenbank und die Anmeldung. Die Daten liegen auf
       Servern in Frankfurt am Main. Mit Supabase besteht ein Vertrag zur Auftragsverarbeitung; für einen möglichen
-      Zugriff aus den USA gelten die EU-Standardvertragsklauseln bzw. das EU-US Data Privacy Framework.</li>
+      Zugriff aus den USA gelten die darin vereinbarten EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO).</li>
     <li><b>Brevo</b> (Sendinblue SAS, Frankreich) verschickt die E-Mails mit dem Anmeldecode. Dabei verarbeitet Brevo
       die E-Mail-Adresse. Mit Brevo besteht ein Vertrag zur Auftragsverarbeitung.</li>
     <li><b>Apple und Google</b> wickeln Kauf und Bezahlung über den App Store bzw. Google Play ab und sind dafür selbst
-      verantwortlich; wir erhalten nur die Bestätigung des Kaufs. Bei „Mit Apple/Google anmelden“ gilt zusätzlich
-      deren Datenschutzerklärung.</li>
+      verantwortlich; wir erhalten nur die Bestätigung des Kaufs. Bei „Mit Apple/Google anmelden“ meldet ihr euch bei
+      Apple bzw. Google an (deren Datenschutzerklärung gilt); diese übermitteln uns E-Mail-Adresse und Kennung des
+      Kontos, auch von Servern außerhalb der EU.</li>
   </ul>
   <p>Die App enthält keine Werbung, keine Analyse- oder Tracking-Dienste und keine Inhalte anderer Anbieter.</p>
 
   <h3>Auf dem Gerät</h3>
   <p>Die App speichert auf dem Gerät die Anmeldung, die Einstellungen je Kind und noch nicht übertragene Runden (damit
-    Üben auch ohne Internet geht). Beim Abmelden werden diese Daten vom Gerät entfernt.</p>
+    Üben auch ohne Internet geht). Das ist für die App unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Beim Abmelden
+    werden diese Daten vom Gerät entfernt; ist die Anmeldung nur abgelaufen, bleiben noch nicht übertragene Runden bis
+    zum nächsten Anmelden auf dem Gerät.</p>
   <p><b>Erinnerung:</b> Auf Wunsch erinnert die App zu einer gewählten Uhrzeit ans Üben. Das ist eine lokale
     Benachrichtigung, die das Gerät selbst auslöst: Uhrzeit und Wochentage bleiben auf dem Gerät, es wird nichts an uns
     oder an einen Benachrichtigungsdienst übertragen. Die Erinnerung ist zunächst ausgeschaltet und lässt sich unter
     „Für Eltern“ jederzeit ändern.</p>
 
   <h3>Wie lange</h3>
-  <p>So lange das Elternkonto besteht. Konto und alle Daten der Familie lassen sich in der App unter „Für Eltern“
-    löschen; alternativ genügt eine E-Mail an <a href="mailto:kontakt@leseflitz.de">kontakt@leseflitz.de</a>.
-    Ein Kauf bleibt beim App Store bzw. bei Google Play und lässt sich wiederherstellen.</p>
+  <ul>
+    <li><b>Konto, Kinder, Runden, Bücher:</b> so lange das Elternkonto besteht. Ein einzelnes Kind lässt sich jederzeit
+      entfernen, Konto und alle Daten der Familie lassen sich in der App unter „Für Eltern“ löschen; alternativ genügt
+      eine E-Mail an <a href="mailto:kontakt@leseflitz.de">kontakt@leseflitz.de</a>. Wie es geht:
+      <a href="konto-loeschen.html">Konto und Daten löschen</a>.</li>
+    <li><b>Sicherungskopien</b> der Datenbank: Gelöschte Daten verschwinden aus ihnen spätestens nach 14 Tagen.</li>
+    <li><b>Technische Protokolle</b> bei Supabase: höchstens 28 Tage.</li>
+    <li><b>Einladungscodes:</b> 24 Stunden, danach ungültig; ein neuer Code ersetzt die älteren. <b>Anmeldecodes</b>
+      gelten 10 Minuten.</li>
+    <li><b>Kauf:</b> bleibt beim App Store bzw. bei Google Play und lässt sich wiederherstellen.</li>
+  </ul>
 
   <h2>3. Diese Website</h2>
   <p>Die Website wird über GitHub Pages (GitHub Inc., USA) ausgeliefert. Beim Aufruf verarbeitet GitHub technisch
     notwendige Daten wie die IP-Adresse, um die Seite auszuliefern und Missbrauch abzuwehren
-    (Art. 6 Abs. 1 lit. f DSGVO). Die Website setzt keine Cookies, lädt keine Schriften oder Inhalte von anderen
-    Servern und misst nichts.</p>
+    (Art. 6 Abs. 1 lit. f DSGVO). GitHub ist nach dem EU-US Data Privacy Framework zertifiziert (Art. 45 DSGVO).
+    Die Website setzt keine Cookies, lädt keine Schriften oder Inhalte von anderen Servern und misst nichts.</p>
+  <p>Die Website verlinkt auf den App Store und Google Play. Erst beim Klick auf einen solchen Link verarbeiten Apple
+    bzw. Google Daten nach ihren eigenen Datenschutzerklärungen. Die Links enthalten eine Kampagnenkennung
+    (zum Beispiel „web-hero“), damit wir in den Statistiken der Stores sehen, wie viele Downloads über die Website
+    kamen. Die Website selbst speichert dafür nichts.</p>
 
   <h2>4. E-Mail an uns</h2>
   <p>Wenn du uns schreibst, verwenden wir deine Nachricht und E-Mail-Adresse nur, um zu antworten, und löschen sie,
-    wenn sie dafür nicht mehr gebraucht werden. E-Mails an Adressen von leseflitz.de nimmt der Weiterleitungsdienst
-    <b>ImprovMX</b> (Sidekick Labs, USA) entgegen und leitet sie an unser Postfach weiter.</p>
+    wenn sie dafür nicht mehr gebraucht werden (Art. 6 Abs. 1 lit. b bzw. f DSGVO). E-Mails an Adressen von
+    leseflitz.de nimmt der Weiterleitungsdienst <b>ImprovMX</b> (USA) entgegen und leitet sie an unser Postfach weiter.</p>
 
   <h2>5. Deine Rechte</h2>
-  <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und
-    Widerspruch (Art. 15 bis 21 DSGVO). Schreib dazu an <a href="mailto:kontakt@leseflitz.de">kontakt@leseflitz.de</a>.
+  <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit
+    (Art. 15 bis 20 DSGVO). Schreib dazu an <a href="mailto:kontakt@leseflitz.de">kontakt@leseflitz.de</a>.
     Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren, zum Beispiel bei der Berliner
     Beauftragten für Datenschutz und Informationsfreiheit.</p>
+  <div class="objection">
+    <p><b>Widerspruchsrecht (Art. 21 DSGVO):</b> Soweit wir Daten auf Grundlage eines berechtigten Interesses
+      verarbeiten (technische Protokolle, Auslieferung der Website), kannst du dem aus Gründen, die sich aus deiner
+      besonderen Situation ergeben, jederzeit widersprechen – formlos an
+      <a href="mailto:kontakt@leseflitz.de">kontakt@leseflitz.de</a>.</p>
+  </div>
 
   <footer>
     <span>© 2026 LINICA GmbH</span>
     <a href="./">Start</a>
     <a href="impressum.html">Impressum</a>
+    <a href="konto-loeschen.html">Konto löschen</a>
   </footer>
 </div>
 </body>
