@@ -44,9 +44,20 @@
       Bildschirmgröße). Daraus ergeben sich Bestzeiten, die Wortklinik und die Auswertung für die Eltern.</li>
     <li><b>Bücher:</b> der vergebene Titel, die Kapitelnamen und die Wortlisten, die die App aus einem eingefügten Text
       erstellt – nicht der Text selbst.</li>
-    <li><b>Familie und Kauf:</b> welche Elternkonten zu einer Familie gehören, Einladungscodes für ein zweites
-      Elternteil, Beginn der Testphase, welches Kind in der Gratis-Version übt und ob Leseflitz gekauft wurde (mit der
-      Kennung des Kaufs aus dem App Store bzw. Google Play, ohne Zahlungsdaten).</li>
+    <li><b>Familie:</b> welche Elternkonten zu einer Familie gehören, Einladungscodes für ein zweites Elternteil, Beginn
+      der Testphase und welches Kind in der Gratis-Version übt.</li>
+    <!-- Rechtsprüfung: Abschnitt Abo neu (Oktober 2026) -->
+    <li><b>Abo:</b> Wenn ihr in der App ein Abo abschließt, speichern wir die Kennung des Abos aus dem App Store bzw.
+      Google Play, das Produkt, den Zustand (läuft, gekündigt, abgelaufen, erstattet), das Ablaufdatum, ob es sich
+      verlängert, und ob es ein Testkauf ist – keine Zahlungsdaten, keinen Namen und keine Anschrift. Diese Angaben
+      fragt unser Server bei Apple bzw. Google ab; außerdem benachrichtigen uns Apple und Google, wenn sich etwas ändert
+      (Verlängerung, Kündigung, Erstattung). Beim Kauf übergibt die App eine zufällige Kennung eurer Familie an Apple
+      bzw. Google, damit das Abo der richtigen Familie zugeordnet wird; daraus lässt sich nicht auf Personen schließen.</li>
+    <!-- Rechtsprüfung: Herkunftsfrage neu (Oktober 2026), Rechtsgrundlage prüfen -->
+    <li><b>Wie ihr von Leseflitz erfahren habt (freiwillig):</b> Beim Anlegen des ersten Kindes fragt die App einmal,
+      wie ihr auf Leseflitz gekommen seid, mit festen Antworten (zum Beispiel „Schule oder Lehrkraft“), ohne Freitext.
+      Die Antwort gilt für die Familie und wird nur in Summen ausgewertet, damit wir wissen, welche Wege Leseflitz bekannt
+      machen. Überspringen ist jederzeit möglich.</li>
     <li><b>Technische Protokolle:</b> Bei der Anmeldung und bei jedem Zugriff auf die Datenbank verarbeitet unser
       Anbieter Supabase die IP-Adresse, Zeitpunkt und eine Kennung von Browser bzw. App. Beim Versand des
       Anmeldecodes speichert Brevo ein Versandprotokoll (Empfängeradresse, Zeitpunkt, Zustellstatus).</li>
@@ -56,8 +67,10 @@
 
   <h3>Wozu und auf welcher Grundlage</h3>
   <p>Wir verarbeiten diese Daten, um die App bereitzustellen: Anmeldung, Speichern der Übungsrunden, Abgleich zwischen
-    den Geräten einer Familie, Bestzeiten, Wortklinik, Auswertung und Freischaltung nach dem Kauf
+    den Geräten einer Familie, Bestzeiten, Wortklinik, Auswertung und Freischaltung durch das Abo
     (Art. 6 Abs. 1 lit. b DSGVO, Vertrag mit den Eltern).</p>
+  <p><b>Herkunftsfrage:</b> Die freiwillige Angabe dient dazu, unsere Bekanntmachung ohne Tracking auszuwerten
+    (Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse; ohne Angabe ändert sich an der App nichts).</p>
   <p><b>Daten der Kinder:</b> Vertragspartner sind die Eltern. Sie legen die Kinder an und geben deren Angaben ein; die
     App ist für die Nutzung durch Kinder gemeinsam mit einem Erwachsenen gedacht. Die Daten der Kinder verarbeiten wir
     zur Erfüllung des Vertrags mit den Eltern, nicht auf Grundlage einer Einwilligung des Kindes
@@ -72,8 +85,8 @@
       Zugriff aus den USA gelten die darin vereinbarten EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO).</li>
     <li><b>Brevo</b> (Sendinblue SAS, Frankreich) verschickt die E-Mails mit dem Anmeldecode. Dabei verarbeitet Brevo
       die E-Mail-Adresse. Mit Brevo besteht ein Vertrag zur Auftragsverarbeitung.</li>
-    <li><b>Apple und Google</b> wickeln Kauf und Bezahlung über den App Store bzw. Google Play ab und sind dafür selbst
-      verantwortlich; wir erhalten nur die Bestätigung des Kaufs. Bei „Mit Apple/Google anmelden“ meldet ihr euch bei
+    <li><b>Apple und Google</b> wickeln Abschluss, Bezahlung, Verlängerung und Kündigung des Abos über den App Store bzw.
+      Google Play ab und sind dafür selbst verantwortlich; wir erhalten nur die oben genannten Angaben zum Abo. Bei „Mit Apple/Google anmelden“ meldet ihr euch bei
       Apple bzw. Google an (deren Datenschutzerklärung gilt); diese übermitteln uns E-Mail-Adresse und Kennung des
       Kontos, auch von Servern außerhalb der EU.</li>
   </ul>
@@ -99,7 +112,9 @@
     <li><b>Technische Protokolle</b> bei Supabase: höchstens 28 Tage.</li>
     <li><b>Einladungscodes:</b> 24 Stunden, danach ungültig; ein neuer Code ersetzt die älteren. <b>Anmeldecodes</b>
       gelten 10 Minuten.</li>
-    <li><b>Kauf:</b> bleibt beim App Store bzw. bei Google Play und lässt sich wiederherstellen.</li>
+    <li><b>Abo-Angaben und Herkunftsfrage:</b> so lange das Elternkonto besteht, mit der Familie gelöscht. Das Abo selbst
+      besteht beim App Store bzw. bei Google Play weiter, bis ihr es dort kündigt, und lässt sich mit einem neuen Konto
+      wiederherstellen.</li>
   </ul>
 
   <h2>3. Diese Website</h2>
@@ -124,7 +139,7 @@
     Beauftragten für Datenschutz und Informationsfreiheit.</p>
   <div class="objection">
     <p><b>Widerspruchsrecht (Art. 21 DSGVO):</b> Soweit wir Daten auf Grundlage eines berechtigten Interesses
-      verarbeiten (technische Protokolle, Auslieferung der Website), kannst du dem aus Gründen, die sich aus deiner
+      verarbeiten (technische Protokolle, Auslieferung der Website, Herkunftsfrage), kannst du dem aus Gründen, die sich aus deiner
       besonderen Situation ergeben, jederzeit widersprechen – formlos an
       <a href="mailto:kontakt@leseflitz.de">kontakt@leseflitz.de</a>.</p>
   </div>

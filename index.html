@@ -53,8 +53,10 @@
       <a data-os="android" href="#laden"><img src="img/badge-googleplay-de.png" alt="Jetzt bei Google Play" width="155" height="60"></a>
     </div>
     <span class="soon">Bald im App Store und bei Google Play</span>
-    <p class="priceline">Kostenlos laden · 7 Tage alles testen · danach gratis weiter mit einem Kind – oder Leseflitz
-      komplett für die ganze Familie<span class="mitpreis" hidden> (<span class="preis"></span>)</span> · keine Werbung</p>
+    <p class="priceline vorab">Kostenlos laden · 7 Tage alles testen · danach gratis weiter mit einem Kind – oder Leseflitz
+      komplett für die ganze Familie · keine Werbung</p>
+    <p class="priceline abo" hidden>Kostenlos laden · 7 Tage alles testen · danach <span class="preis"></span> im Jahr
+      für die ganze Familie – oder gratis weiter mit einem Kind · keine Werbung</p>
   </section>
 
   <div class="shots" role="list" aria-label="Bilder aus der App">
@@ -105,7 +107,7 @@
   <h2>Gemacht für Kinder – und für ihre Eltern</h2>
   <ul class="ticks">
     <li><b>Keine Werbung, kein Tracking,</b> keine Analyse-Dienste.</li>
-    <li><b>Im Kinderbereich keine Kaufhinweise.</b> Kauf, Einstellungen und Links nach außen liegen hinter einer Elternsperre
+    <li><b>Im Kinderbereich keine Kaufhinweise.</b> Freischalten, Einstellungen und Links nach außen liegen hinter einer Elternsperre
       mit Rechenaufgabe.</li>
     <li><b>Von Kindern nur Vorname oder Spitzname</b> und ein Bild aus der App, auf Wunsch Klasse und Übungsziel.
       Kein Geburtsdatum, keine Fotos.</li>
@@ -118,10 +120,15 @@
     <div class="price"><h3>Testphase</h3><p class="big">7 Tage</p><p>Alles freigeschaltet, für alle Kinder der Familie.</p></div>
     <div class="price"><h3>Gratis</h3><p class="big">dauerhaft</p><p>Ein Kind übt mit den 100 häufigsten Wörtern und der
       Wortklinik. Auswertung und Abgleich zwischen den Geräten sind dabei.</p></div>
-    <div class="price best"><h3>Leseflitz komplett</h3><p class="big"><span class="preis">alles drin</span></p><p>Alle
+    <div class="price best vorab"><h3>Leseflitz komplett</h3><p class="big">alles drin</p><p>Alle
       Wortlisten, eigene Bücher, Spiele, bis zu 8 Kinder – für die ganze Familie, auf allen Geräten.</p></div>
+    <div class="price best abo" hidden><h3>Jahresabo</h3><p class="big"><span class="preis"></span> im Jahr</p><p>Alle
+      Wortlisten, eigene Bücher, Spiele, bis zu 8 Kinder – für die ganze Familie, auf allen Geräten. Keine weiteren
+      Käufe.</p></div>
   </div>
-  <p class="note">Die Übungsdaten bleiben auch nach der Testphase erhalten und sind nach dem Freischalten sofort wieder da.</p>
+  <p class="note vorab">Die Übungsdaten bleiben auch nach der Testphase erhalten und sind nach dem Freischalten sofort wieder da.</p>
+  <p class="note abo" hidden>Das Abo verlängert sich automatisch um ein Jahr und lässt sich jederzeit im App Store bzw.
+    bei Google Play kündigen. Die Übungsdaten bleiben immer erhalten, auch nach der Testphase oder einer Kündigung.</p>
 
   <h2 id="hilfe">Häufige Fragen</h2>
   <div class="faq">
@@ -129,11 +136,26 @@
       <p>Für Kinder, die die Buchstaben kennen und flüssiger lesen möchten – von der Vorschule bis zur 4. Klasse.
         Für den Anfang gibt es eine Schrift nur mit Großbuchstaben und mehr Abstand zwischen den Buchstaben.</p></details>
     <details><summary>Was kostet Leseflitz?</summary>
-      <p>Kostenlos laden und 7 Tage alles testen. Danach übt ein Kind dauerhaft gratis mit den 100 häufigsten Wörtern und
-        der Wortklinik – oder ihr schaltet Leseflitz komplett für die ganze Familie frei<span class="mitpreis" hidden>
-        (<span class="preis"></span>)</span>.</p></details>
+      <p class="vorab">Kostenlos laden und 7 Tage alles testen. Danach übt ein Kind dauerhaft gratis mit den 100
+        häufigsten Wörtern und der Wortklinik – oder ihr schaltet Leseflitz komplett für die ganze Familie frei.</p>
+      <p class="abo" hidden>Kostenlos laden und 7 Tage alles testen. Danach kostet das Jahresabo <span class="preis"></span>
+        im Jahr für die ganze Familie: bis zu 8 Kinder, alle Geräte, alle Inhalte. Ohne Abo übt ein Kind dauerhaft gratis
+        mit den 100 häufigsten Wörtern und der Wortklinik.</p></details>
     <details><summary>Gibt es weitere Käufe?</summary>
-      <p>Nein. In Leseflitz komplett ist alles enthalten. Freischalten geht nur im Elternbereich der App.</p></details>
+      <p class="vorab">Nein. In Leseflitz komplett ist alles enthalten. Freischalten geht nur im Elternbereich der App.</p>
+      <p class="abo" hidden>Nein. Im Jahresabo ist alles enthalten. Abschließen geht nur im Elternbereich der App.</p></details>
+    <!-- Testphase Variante A (PLAN-PREIS.md): ohne Zahlungsdaten. Bei Wechsel auf Variante B (Probezeitraum im Store) anpassen. -->
+    <details class="abo" hidden><summary>Was passiert nach den 7 Tagen?</summary>
+      <p>Die Testphase endet von selbst – ohne Kosten und ohne Kündigung, denn Zahlungsdaten werden dafür nicht abgefragt.
+        Danach übt ein Kind gratis weiter, oder ihr schließt im Elternbereich das Jahresabo ab. Die Übungsdaten bleiben
+        in jedem Fall erhalten.</p></details>
+    <details class="abo" hidden><summary>Wie kündige ich das Abo?</summary>
+      <p>Dort, wo ihr es abgeschlossen habt: auf dem iPhone oder iPad unter Einstellungen → euer Name → Abonnements, auf
+        Android in der Google-Play-App unter Profil → Zahlungen und Abos → Abos. In Leseflitz führt „Für Eltern“ →
+        „Abo verwalten“ direkt dorthin. Nach der Kündigung läuft das Abo bis zum Ende des bezahlten Jahres.</p></details>
+    <details class="abo" hidden><summary>Gilt das Abo auf iPhone und Android?</summary>
+      <p>Ja. Das Abo gehört zu eurem Leseflitz-Konto: Alle Geräte der Familie, die damit angemeldet sind, sind
+        freigeschaltet – auch das Android-Tablet, wenn ihr das Abo auf dem iPhone abgeschlossen habt.</p></details>
     <details><summary>Kann mein Kind allein üben?</summary>
       <p>Die Leseübung ist für zwei gedacht: Das Kind liest, ein Erwachsener sitzt daneben und tippt. Im Modus „Blitz“
         laufen die Wörter von allein, und die Spiele „Wort-Paare“ und „Bild und Wort“ gehen ganz allein.</p></details>
@@ -151,6 +173,9 @@
     <details><summary>Wie löschen wir unsere Daten?</summary>
       <p>In der App unter „Für Eltern“ → „Konto löschen“, oder per E-Mail. Alles dazu:
         <a href="konto-loeschen.html">Konto und Daten löschen</a>.</p></details>
+    <details><summary>Mein Kind liest sehr stockend. Was hilft?</summary>
+      <p>Das ist gerade in der 1. und 2. Klasse sehr verbreitet. Was zu Hause hilft und wann eine Abklärung sinnvoll ist,
+        steht in unserem Ratgeber: <a href="kind-liest-stockend.html">Kind liest stockend – was hilft?</a></p></details>
   </div>
 
   <h2 id="laden">Leseflitz laden</h2>
@@ -161,6 +186,10 @@
   <p class="soon-text">Leseflitz kommt bald in den App Store und zu Google Play.</p>
   <p class="desk note" hidden>Am besten auf dem Handy oder Tablet öffnen: <b>leseflitz.de</b></p>
 
+  <h2 id="ueber">Über Leseflitz</h2>
+  <p>Leseflitz ist am Küchentisch entstanden: Ich habe es als Vater für meine beiden Kinder gebaut, die damit seit
+    Wochen jeden Tag fünf Minuten üben. Jetzt können es alle Familien nutzen.</p>
+
   <h2>Kontakt</h2>
   <p>Fragen, Wünsche, Fehler gefunden? Schreib uns an <a href="mailto:kontakt@leseflitz.de">kontakt@leseflitz.de</a>.</p>
 
@@ -169,35 +198,10 @@
     <a href="impressum.html">Impressum</a>
     <a href="datenschutz.html">Datenschutz</a>
     <a href="konto-loeschen.html">Konto löschen</a>
+    <a href="kind-liest-stockend.html">Ratgeber</a>
   </footer>
 </div>
-<script>
-/* Zum Store-Start nur hier eintragen:
-   LIVE = true zeigt die Store-Knöpfe statt „Bald im App Store …“.
-   APPLE_ID = Zahl aus dem App-Store-Link (…/id1234567890), APPLE_PT = Anbieter-Kennung aus App Store Connect (optional).
-   PREIS = z. B. "6,99 €" – erscheint an allen Preis-Stellen (leer: ohne Betrag).
-   Die Links tragen eine Kampagnenkennung (hero/footer): die Stores zeigen so, wie viele Downloads über die Website
-   kamen. Die Website selbst misst nichts. */
-var LIVE = false, APPLE_ID = "", APPLE_PT = "", PREIS = "";
-(function(){
-  var GOOGLE = "https://play.google.com/store/apps/details?id=de.leseflitz.app&referrer=utm_source%3Dleseflitz.de%26utm_medium%3Dweb%26utm_campaign%3D";
-  function apple(place){ return "https://apps.apple.com/de/app/leseflitz/id"+APPLE_ID+"?mt=8&ct=web-"+place+(APPLE_PT ? "&pt="+APPLE_PT : ""); }
-  if(PREIS){
-    document.querySelectorAll(".preis").forEach(function(e){ e.textContent = PREIS; });
-    document.querySelectorAll(".mitpreis").forEach(function(e){ e.hidden = false; });
-  }
-  if(!LIVE || !APPLE_ID) return;
-  var u = navigator.userAgent, ios = /iPhone|iPad|iPod/.test(u) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1),
-      and = /Android/.test(u);
-  document.querySelectorAll(".stores").forEach(function(s){
-    var a = s.querySelector("[data-os=ios]"), g = s.querySelector("[data-os=android]"), place = s.dataset.place;
-    a.href = apple(place); g.href = GOOGLE + place;
-    if(and){ s.insertBefore(g, a); a.classList.add("dim"); } else if(ios) g.classList.add("dim");
-    s.hidden = false;
-  });
-  document.querySelectorAll(".soon, .soon-text").forEach(function(e){ e.hidden = true; });
-  if(!ios && !and) document.querySelector(".desk").hidden = false;
-})();
-</script>
+<!-- Store-Start: LIVE, APPLE_ID, APPLE_PT und PREIS in stores.js eintragen -->
+<script src="stores.js"></script>
 </body>
 </html>
