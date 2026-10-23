@@ -15,6 +15,12 @@ var LIVE = false, APPLE_ID = "", APPLE_PT = "", PREIS = "";
     document.querySelectorAll(".vorab").forEach(function(e){ e.hidden = true; });
   }
   if(!LIVE || !APPLE_ID) return;
+  // laden.html (Ziel des QR-Codes): gleich zur passenden Store-Seite
+  if(document.body.dataset.weiter){
+    var place = document.body.dataset.weiter, ua = navigator.userAgent;
+    if(/iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)){ location.replace(apple(place)); return; }
+    if(/Android/.test(ua)){ location.replace(GOOGLE + place); return; }
+  }
   var u = navigator.userAgent, ios = /iPhone|iPad|iPod/.test(u) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1),
       and = /Android/.test(u);
   document.querySelectorAll(".stores").forEach(function(s){

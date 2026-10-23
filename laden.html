@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leseflitz laden</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<!-- Ziel des QR-Codes auf der Startseite: leitet ab LIVE (stores.js) iPhone/iPad in den App Store und Android zu
+     Google Play weiter, mit Kampagnen-Kürzel „qr“. Sonst zeigt die Seite beide Knöpfe. -->
+<body data-weiter="qr">
+<div class="wrap">
+  <header class="top">
+    <a href="./" class="logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo-400.png" alt="Leseflitz" width="400" height="125"></picture></a>
+  </header>
+  <section class="hero">
+    <h1>Leseflitz laden</h1>
+    <div class="stores" data-place="qr" hidden>
+      <a data-os="ios" href="./"><img src="img/badge-appstore-de.svg" alt="Laden im App Store" width="120" height="40"></a>
+      <a data-os="android" href="./"><img src="img/badge-googleplay-de.webp" alt="Jetzt bei Google Play" width="166" height="64"></a>
+    </div>
+    <span class="soon">Bald im App Store und bei Google Play</span>
+    <p><a href="./">Mehr über Leseflitz</a></p>
+  </section>
+</div>
+<script src="stores.js"></script>
+</body>
+</html>
