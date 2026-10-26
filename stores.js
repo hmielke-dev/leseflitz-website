@@ -5,7 +5,7 @@
    Leer: neutrale Texte ohne Abo und Betrag.
    Die Links tragen eine Kampagnenkennung (data-place, z. B. hero, footer, ratgeber): die Stores zeigen so, wie viele
    Downloads über die Website kamen. Die Website selbst misst nichts. */
-var LIVE = false, APPLE_ID = "", APPLE_PT = "", PREIS = "";
+var LIVE = false, APPLE_ID = "", APPLE_PT = "", PREIS = "6,99 €";   // geschütztes Leerzeichen: Betrag bricht nicht um
 (function(){
   var GOOGLE = "https://play.google.com/store/apps/details?id=de.leseflitz.app&referrer=utm_source%3Dleseflitz.de%26utm_medium%3Dweb%26utm_campaign%3D";
   function apple(place){ return "https://apps.apple.com/de/app/leseflitz/id"+APPLE_ID+"?mt=8&ct=web-"+place+(APPLE_PT ? "&pt="+APPLE_PT : ""); }
