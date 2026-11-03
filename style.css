@@ -87,3 +87,24 @@ address{font-style:normal}
 .quellen li{margin-bottom:.3rem}
 .crumbs{font-size:.88rem;color:var(--ink-soft);margin:.2rem 0 .6rem}
 .crumbs a{color:var(--ink-soft)}
+/* Ratgeber-Bereich (November 2026): Tabellen, Schrittlisten, Buchkarten, kleiner Store-Block */
+.ratgeber table{width:100%;border-collapse:collapse;margin:.6rem 0 1rem;font-size:.95rem;background:var(--card);border:1px solid var(--line);border-radius:.8rem;overflow:hidden}
+.ratgeber th,.ratgeber td{text-align:left;vertical-align:top;padding:.55rem .75rem;border-bottom:1px solid var(--line)}
+.ratgeber thead th{color:var(--petrol);font-weight:800}
+.ratgeber tbody th{font-weight:800;width:38%}
+.ratgeber tbody tr:last-child th,.ratgeber tbody tr:last-child td{border-bottom:0}
+@media (max-width:30rem){.ratgeber table{font-size:.88rem}.ratgeber th,.ratgeber td{padding:.45rem .5rem}.ratgeber tbody th{width:42%;hyphens:auto}}
+.ratgeber ol:not(.quellen) li{margin-bottom:.45rem}
+.buch{margin:.8rem 0;padding:.85rem 1rem;background:var(--card);border:1px solid var(--line);border-radius:.8rem}
+.buch h3{margin:0 0 .3rem}
+.buch p{margin:.3rem 0}
+.cta.klein{border:1px solid var(--line);padding:.8rem 1rem;font-size:.95rem}
+.ratgeber table.woerter th[scope=row]{width:3.2rem;color:var(--ink-soft);font-weight:800}
+.ratgeber table.woerter td{font-size:1.05rem;line-height:1.6}
+.pdf-knopf{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1rem;margin:1rem 0 1.4rem}
+.pdf-knopf a{display:inline-flex;align-items:center;min-height:48px;padding:.55rem 1.3rem;border-radius:999px;background:var(--petrol);
+  color:var(--paper);font-weight:800;text-decoration:none}
+.pdf-knopf a::before{content:"↓";margin-right:.5rem;font-weight:800}
+.pdf-knopf a:focus-visible{outline:3px solid var(--mustard);outline-offset:3px}
+.pdf-knopf span{color:var(--ink-soft);font-size:.92rem}
+.weiter{margin:0;padding-left:1.2rem;display:grid;gap:.35rem}
