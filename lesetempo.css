@@ -1,0 +1,92 @@
+/* Lesetempo-Check (nur woerter-pro-minute.html). Farben aus style.css (Variablen, Dark Mode inklusive).
+   Andika (SIL Open Font License, fonts/OFL-Andika.txt) nur für den Lesetext; cv30 = I ohne Querstriche, cv39 = l mit Bogen. */
+@font-face{font-family:'Andika';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/andika-sil-400.woff2) format('woff2')}
+
+.lt{scroll-margin-top:1rem;margin:1.6rem 0 1rem;padding:1rem 1rem 1.2rem;background:var(--card);border:2px solid var(--petrol);border-radius:.9rem}
+.lt h2{margin:0 0 .6rem}
+.lt h3{margin:.2rem 0 .4rem;font-size:1.05rem}
+.lt p{margin:.4rem 0}
+.lt [tabindex="-1"]:focus{outline:none}
+.lt-klein{font-size:.92rem;color:var(--ink-soft)}
+.lt-intro{font-size:1.08rem}
+.lt-row{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.6rem 0}
+
+/* Knöpfe: mindestens 44 px hoch, sichtbarer Fokus */
+.lt button,.lt .lt-link{font:inherit;font-weight:700;min-height:44px;padding:.45rem 1rem;border-radius:999px;border:2px solid var(--petrol);
+  background:transparent;color:var(--petrol);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.lt .lt-btn{background:var(--petrol);color:var(--paper)}
+.lt .lt-gross{font-size:1.15rem;min-width:9rem;min-height:52px}
+.lt .lt-stopp{background:var(--tomato);border-color:var(--tomato);color:#fff}
+.lt button:disabled{opacity:.45;cursor:default}
+.lt button:focus-visible,.lt .lt-link:focus-visible,.lt input:focus-visible+span,.lt input[type=text]:focus-visible{outline:3px solid var(--mustard);outline-offset:2px}
+
+/* Klassenwahl als große Felder */
+.lt-klasse{border:0;margin:.6rem 0;padding:0}
+.lt-klasse legend{font-weight:800;margin-bottom:.35rem;padding:0}
+.lt-klasse .lt-wahl{display:flex;gap:.5rem;flex-wrap:wrap}
+.lt-klasse label{position:relative}
+.lt-klasse input{position:absolute;opacity:0;width:1px;height:1px}
+.lt-klasse span{display:inline-flex;align-items:center;justify-content:center;min-width:3.4rem;min-height:48px;padding:0 .9rem;border:2px solid var(--line);
+  border-radius:.7rem;font-weight:800;cursor:pointer;background:var(--paper)}
+.lt-klasse input:checked+span{border-color:var(--petrol);background:var(--petrol);color:var(--paper)}
+.lt-optionen{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin:.6rem 0 0;font-size:.95rem}
+.lt-optionen label{display:inline-flex;align-items:center;gap:.45rem;min-height:44px;cursor:pointer}
+.lt-optionen input{width:1.25rem;height:1.25rem;accent-color:var(--petrol)}
+
+/* Lese-Bühne: Leiste oben (feste Mindesthöhe, kein Sprung zwischen „Start“ und „Stopp“), darunter der Textkasten */
+.lt-bar{min-height:4.6rem;display:flex;flex-direction:column;justify-content:center}
+.lt-bar .lt-row{margin:.3rem 0}
+.lt-uhr{font-variant-numeric:tabular-nums;font-size:1rem;color:var(--ink-soft);padding:0 .4rem}
+.lt-ohne-uhr .lt-uhr{visibility:hidden}
+.lt-titelzeile{font-size:.92rem;color:var(--ink-soft);margin:.2rem 0 .3rem}
+.lt-status{font-weight:800;font-size:1.1rem;margin:.2rem 0}
+.lt-anweisung{font-weight:700}
+.lt-text{position:relative;height:min(62vh,34rem);min-height:16rem;overflow-y:auto;overscroll-behavior:contain;padding:.6rem .7rem;
+  border:1px solid var(--line);border-radius:.7rem;background:var(--paper);
+  font-family:Andika,Nunito,sans-serif;font-feature-settings:"cv30" 1,"cv39" 1;font-size:1.4rem;line-height:1.5;
+  -webkit-tap-highlight-color:transparent}
+@media (min-width:40rem){.lt-text{font-size:1.55rem}}
+/* Wörter als Knöpfe, die wie Text aussehen; Tippfläche ≥ 44 px über line-height */
+.lt .lt-w{display:inline;font:inherit;font-weight:400;color:var(--ink);background:none;border:0;border-radius:.3rem;min-height:0;padding:.42rem .06rem;margin:0;
+  line-height:inherit;cursor:default;text-decoration:none;opacity:1}
+.lt .lt-w:disabled{opacity:1;color:var(--ink)}
+.lt[data-state=marking-end] .lt-w:not(:disabled),.lt[data-state=marking-errors] .lt-w:not(:disabled){cursor:pointer}
+.lt[data-state=marking-end] .lt-w:not(:disabled):hover,.lt[data-state=marking-errors] .lt-w:not(:disabled):hover{background:var(--line)}
+.lt .lt-w:focus-visible{outline:3px solid var(--mustard);outline-offset:0}
+.lt .lt-w.lt-letztes{background:var(--mustard);color:#173F42;box-shadow:0 0 0 2px var(--mustard)}
+.lt .lt-w.lt-danach{opacity:.38}
+/* Fehler: nicht nur Farbe, sondern auch durchgestrichen */
+.lt .lt-w.lt-fehler{background:rgba(197,90,78,.2);text-decoration:line-through;text-decoration-color:var(--tomato);text-decoration-thickness:3px}
+/* Vor dem Start ist der Text verdeckt, damit das Kind ihn nicht vorab liest */
+.lt-text.lt-verdeckt{overflow:hidden}
+.lt-text.lt-verdeckt .lt-w{filter:blur(.4em)}
+.lt-text.lt-verdeckt::after{content:"Der Text erscheint, wenn ihr auf Start tippt.";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:1rem;font-family:Nunito,sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink)}
+
+/* Ergebnis */
+.lt-zahl{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;margin:.2rem 0 .4rem}
+.lt-zahl b{font-size:3rem;line-height:1;color:var(--petrol)}
+.lt-einordnung p{font-weight:700}
+.lt-tabelle{border-collapse:collapse;width:100%;margin:.7rem 0;font-size:.95rem}
+.lt-tabelle th,.lt-tabelle td{border-bottom:1px solid var(--line);padding:.45rem .4rem;text-align:left;vertical-align:top}
+.lt-tabelle thead th{font-size:.85rem;color:var(--ink-soft)}
+.lt-tabelle tr.lt-eigene{background:rgba(230,180,34,.18)}
+.lt-hinweis{padding:.7rem .9rem;border-left:4px solid var(--mustard);background:var(--paper);border-radius:.3rem}
+.lt-ergebnis .stores{justify-content:flex-start}
+.lt-teilen-info input{width:100%;font:inherit;padding:.5rem;margin-top:.3rem;border:1px solid var(--line);border-radius:.4rem;background:var(--paper);color:var(--ink)}
+.lt-verlauf{margin-top:.6rem}
+.lt-verlauf summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center}
+.lt-verlauf ol{padding-left:1.3rem;font-size:.92rem}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Druckansicht nur für „Text ausdrucken“ */
+#lt-druck{display:none}
+@media print{
+  html.lt-drucken body>*:not(#lt-druck){display:none!important}
+  html.lt-drucken #lt-druck{display:block;color:#000;font-family:Andika,serif;font-feature-settings:"cv30" 1,"cv39" 1}
+  #lt-druck h1{font-size:16pt;margin:0 0 6pt}
+  #lt-druck p{font-size:10pt;margin:0 0 10pt}
+  .lt-druck-text div{display:flex;justify-content:space-between;gap:12pt;font-size:15pt;line-height:2}
+  .lt-druck-zahl{font-size:10pt;color:#000;min-width:2.5em;text-align:right}
+  .lt-druck-fuss{margin-top:14pt;font-size:8pt}
+}
