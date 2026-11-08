@@ -31,6 +31,7 @@ header.top nav a{color:var(--ink-soft);font-weight:700;text-decoration:none;font
 .stores a.dim img{height:38px}
 .stores a.dim[data-os=android] img{height:56px}
 .shots{display:flex;gap:1rem;overflow-x:auto;padding:.4rem .2rem 1rem;scroll-snap-type:x mandatory;margin:0 -.2rem}
+.shots{list-style:none}.shots li{flex:0 0 auto}
 .shots figure,.shot1{margin:0;flex:0 0 auto;width:min(13.5rem,62vw);scroll-snap-align:start}
 .shots img,.shot1 img{display:block;width:100%;height:auto;border-radius:1.2rem;border:1px solid var(--line);box-shadow:0 6px 18px rgba(23,63,66,.14)}
 figcaption{margin-top:.5rem;font-size:.9rem;font-weight:700;color:var(--ink-soft);text-align:center}
