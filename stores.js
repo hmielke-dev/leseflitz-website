@@ -1,19 +1,13 @@
 /* Zum Store-Start nur hier eintragen (gilt für alle Seiten):
    LIVE = true zeigt die Store-Knöpfe statt „Bald im App Store …“.
    APPLE_ID = Zahl aus dem App-Store-Link (…/id1234567890), APPLE_PT = Anbieter-Kennung aus App Store Connect (optional).
-   PREIS = "6,99 €" schaltet die Abo-Texte ein (.abo sichtbar, .vorab ausgeblendet) und setzt den Betrag in .preis.
-   Leer: neutrale Texte ohne Abo und Betrag.
+   Der Preis (6,99 € im Jahr) steht seit 08.11.2026 fest im HTML (.preis), nicht mehr hier.
    Die Links tragen eine Kampagnenkennung (data-place, z. B. hero, footer, ratgeber): die Stores zeigen so, wie viele
    Downloads über die Website kamen. Die Website selbst misst nichts. */
-var LIVE = false, APPLE_ID = "", APPLE_PT = "", PREIS = "6,99 €";   // geschütztes Leerzeichen: Betrag bricht nicht um
+var LIVE = false, APPLE_ID = "", APPLE_PT = "";
 (function(){
   var GOOGLE = "https://play.google.com/store/apps/details?id=de.leseflitz.app&referrer=utm_source%3Dleseflitz.de%26utm_medium%3Dweb%26utm_campaign%3D";
   function apple(place){ return "https://apps.apple.com/de/app/leseflitz/id"+APPLE_ID+"?mt=8&ct=web-"+place+(APPLE_PT ? "&pt="+APPLE_PT : ""); }
-  if(PREIS){
-    document.querySelectorAll(".preis").forEach(function(e){ e.textContent = PREIS; });
-    document.querySelectorAll(".abo").forEach(function(e){ e.hidden = false; });
-    document.querySelectorAll(".vorab").forEach(function(e){ e.hidden = true; });
-  }
   if(!LIVE || !APPLE_ID) return;
   // laden.html (Ziel des QR-Codes): gleich zur passenden Store-Seite
   if(document.body.dataset.weiter){
