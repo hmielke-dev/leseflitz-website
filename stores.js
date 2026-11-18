@@ -4,7 +4,7 @@
    Der Preis (6,99 € im Jahr) steht seit 08.11.2026 fest im HTML (.preis), nicht mehr hier.
    Die Links tragen eine Kampagnenkennung (data-place, z. B. hero, footer, ratgeber): die Stores zeigen so, wie viele
    Downloads über die Website kamen. Die Website selbst misst nichts. */
-var LIVE = false, APPLE_ID = "", APPLE_PT = "";
+var LIVE = true, APPLE_ID = "6828036647", APPLE_PT = "";
 (function(){
   var GOOGLE = "https://play.google.com/store/apps/details?id=de.leseflitz.app&referrer=utm_source%3Dleseflitz.de%26utm_medium%3Dweb%26utm_campaign%3D";
   function apple(place){ return "https://apps.apple.com/de/app/leseflitz/id"+APPLE_ID+"?mt=8&ct=web-"+place+(APPLE_PT ? "&pt="+APPLE_PT : ""); }
